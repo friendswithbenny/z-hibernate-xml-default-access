@@ -21,7 +21,8 @@ public class TestHibernateXmlFail {
 	static final String
 		FOO = "example.fwb.data.foo",
 		BAR = "example.fwb.data.bar",
-		FOO_EL = "example.fwb.data.foo.eclipselink";
+		FOO_EL = "example.fwb.data.foo.eclipselink",
+		FOO_FIXED = "example.fwb.data.foo.fixed";
 	
 	/**
 	 * this test passes, which proves that hibernate is buggy.
@@ -67,6 +68,19 @@ public class TestHibernateXmlFail {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory(FOO_EL);
 		// confirm it's really EclipseLink
 		Assert.assertEquals("org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl", emf.getClass().getName());
+		
+		FooThing foo1 = new FooThing();
+		foo1.anIdentifier = "firstId";
+		foo1.theName = "the first Foo";
+		
+		genericTest(emf, foo1, "firstId");
+	}
+	
+	@Test
+	public void testFooFixed() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory(FOO_FIXED);
+		// confirm it's really hibernate
+		Assert.assertEquals("org.hibernate.jpa.internal.EntityManagerFactoryImpl", emf.getClass().getName());
 		
 		FooThing foo1 = new FooThing();
 		foo1.anIdentifier = "firstId";
