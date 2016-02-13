@@ -1,7 +1,9 @@
-# hibernate xml fail
+# hibernate xml default access
 
-## UPDATE:
-Javier solved the mystery in ~5 minutes.
+some tests I built to verify jpa behavior,
+a mystery which Javier solved in ~5 minutes.
+
+## solution:
 
 the JPA spec takes pains to define
 * default "access" for annotations

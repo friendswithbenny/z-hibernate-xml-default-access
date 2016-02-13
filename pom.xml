@@ -2,13 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>org.fwb.eg</groupId>
-	<artifactId>hibernate-xml-fail</artifactId>
+	<groupId>org.fwb.z</groupId>
+	<artifactId>z-hibernate-xml-default-access</artifactId>
 	
 	<version>0.0.1-EXAMPLE</version>
 	
-	<name>hibernate-xml-fail</name>
-	<url>https://github.com/friendswithbenny/jpa-xml-hibernate-fail</url>
+	<name>z-hibernate-xml-default-access</name>
+	<url>https://github.com/friendswithbenny/z-hibernate-xml-default-access</url>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
