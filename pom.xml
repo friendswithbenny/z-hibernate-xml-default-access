@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>org.fwb.z</groupId>
+	<groupId>org.friendswithbenny.z</groupId>
 	<artifactId>z-hibernate-xml-default-access</artifactId>
 	
 	<version>0.0.1-EXAMPLE</version>
 	
-	<name>z-hibernate-xml-default-access</name>
+	<name>hibernate-xml-default-access</name>
 	<url>https://github.com/friendswithbenny/z-hibernate-xml-default-access</url>
 	
 	<properties>
